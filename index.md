@@ -1,1 +1,1 @@
-## Robot See Robot Do: An Imitation Learning Framework for Dexterous Manipulation
+## Dexterous Imitation Made Easy: A Learning-Based Framework for Efficient Dexterous Manipulation
