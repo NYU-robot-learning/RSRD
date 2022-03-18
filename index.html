@@ -98,8 +98,9 @@
       <div class="row">
         <div class="col-12">
           <h2 class="center">Method</h3>
-          <img src="figs/demo_framework.png"/>
-          <p>Overview of our DIME.</p>
+          <img src="figs/intro.png"/>
+          <p>DIME consists of two phases: demonstration colleciton, which is performed in real-time with visual feedback, 
+            and demonstration-based policy learning, which can learn to solve dexterous tasks from a limited number of demonstrations. </p>
           </div>
         </div>
       </div>
@@ -123,7 +124,7 @@
           </div>
       <div class="grid-display">
         <div class="row">
-          <img src="figs/demonstrations.png"/>
+          <img src="figs/demo_framework.png"/>
           <!-- <div class="col-6">
             <video class="img" controls muted autoplay loop>
                 <source src="files/demo_small.mp4" type="video/mp4">
@@ -134,11 +135,14 @@
                 <source src="files/demo_pov_small.mp4" type="video/mp4">
             </video>
           </div> -->
+        <p>Unlike previous work, which uses one or multiple depth cameras, we collect demonstrations in real-time from a single RGB camera. 
+          We use MediaPipe's hand detector and re-target the human fingertip positions into desired fingertip positions for the AllegroHand.
+        The low-level controller uses inverse kinematics and a PD control to reach the desired locations in 3D space.</p>
         </div>
         <div class="row">
             <div class="col-1 hidden-sm"></div>
             <div class="col-10">
-              <h2 class="center">Execution</h3>
+              <h2 class="center">Learned Policies</h3>
             </div>
             <div class="col-1 hidden-sm"></div>
           </div>
@@ -155,6 +159,7 @@
             <img src="figs/block-8x.gif"/>
             <h3 class="center">Rotating task (x8)</h3>
           </div>
+          <p>We find a simple nearest neighbors-based immitation approach (INN) is sufficient to solve our tasks. Here we visualize a learned policy for each of the 3 tasks we consider. </p>
         </div>
       <div class="row">
         <div class="col-4 hidden-sm"></div>
@@ -163,7 +168,7 @@
         </div>
         <div class="col-4 hidden-sm"></div>
       </div>
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-1 hidden-sm"></div>
         <div class="col-10">
           <h2 class="center">Citation</h3>
@@ -172,7 +177,7 @@
           </pre>
         </div>
         <div class="col-1 hidden-sm"></div>
-      </div>
+      </div> -->
     </div>
   </div>
   <footer>
