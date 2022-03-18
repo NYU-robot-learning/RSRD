@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Social share meta tags -->
+  <meta property="og:title" content="Dexterous Imitation Made Easy: A Learning-Based Framework for Efficient Dexterous Manipulation">
+  <meta property="og:description" content="A new way for visual imitation from demonstrations: Visual Imitation Through Nearest Neighbors, or VINN">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Visual Imitation Through Nearest Neighbors">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dexterous Imitation Made Easy: A Learning-Based Framework for Efficient Dexterous Manipulation">
+  <meta name="twitter:description" content="A new way for visual imitation from demonstrations: Visual Imitation Through Nearest Neighbors, or VINN">
+  <meta name="twitter:image" content="https://https://jyopari.github.io/VINN/files/method.png" />
+  <!-- End social share meta tags -->
+  <link rel="shortcut icon" href="img/favicon.png">
+  <link rel="stylesheet" href="css/simple-grid.css">
+  <title>Dexterous Imitation Made Easy</title>
+  <meta name="description" content="A simple, lightweight grid and container system for your website.">
+  <!-- End Google Analytics -->
+</head>
+<body>
+  <div class="jumbotron">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 center">
+          <h1>Dexterous Imitation Made Easy: A Learning-Based Framework for Efficient Dexterous Manipulation</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3 hidden-sm"></div>
+        <div class="col-2 center">
+          <a href="https://arxiv.org/" download>
+            <h3>Paper (Coming soon)</h3>
+          </a>
+        </div>
+        <div class="col-2 center">
+            <a href="https://github.com/" download>
+              <h3>Code (Coming soon)</h3>
+            </a>
+          </div>
+          <div class="col-2 center">
+            <a href="" download>
+              <h3>Data (Coming soon)</h3>
+            </a>
+          </div>
+
+        <div class="col-3 hidden-sm"></div>
+      </div>
+      <div class="row">
+        <div class="col-3 center">
+          <h3>Sridhar Pandian Arunachalam*</h3>
+          <p>
+            New York University
+          </p>
+        </div>
+        <div class="col-3 center">
+            <h3>Sneha Silwal*</h3>
+            <p>
+              New York University
+            </p>
+          </div>
+          <div class="col-3 center">
+            <h3>Ben Evans</h3>
+            <p>
+              New York University
+            </p>
+          </div>
+          <div class="col-3 center">
+            <h3>Lerrel Pinto</h3>
+            <p>
+              New York University
+            </p>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col-1 hidden-sm"></div>
+        <div class="col-10 center img">
+          <!-- <div class="auto-resizable-iframe">
+            <div>
+              <iframe src="todo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>           -->
+          <video class="img" controls>
+            <source src="figs/dime_video.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="col-1 hidden-sm"></div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2 class="center m-bottom">Abstract</h3>
+          <p>
+            Optimizing behaviors for dexterous manipulation has been a longstanding challenge in robotics, with a variety of methods from model-based control to model-free reinforcement learning having been previously explored in literature. Perhaps one of the most powerful techniques to learn complex manipulation strategies is imitation learning. However, collecting and learning from demonstrations in dexterous manipulation is quite challenging. The complex, high-dimensional action-space involved with multi-finger control often leads to poor sample efficiency of learning-based methods. In this work, we propose `Dexterous Imitation Made Easy' (DIME) a new imitation learning framework for dexterous manipulation. DIME only requires a single RGB camera to observe a human operator and teleoperate our robotic hand. Once demonstrations are collected, DIME employs standard imitation learning methods to train dexterous manipulation policies. On both simulation and real robot benchmarks we demonstrate that DIME can be used to solve complex, in-hand manipulation tasks such as `flipping', `spinning', and `rotating' objects with the Allegro hand. Our framework along with pre-collected demonstrations will be made publicly available on this webpage.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2 class="center">Method</h3>
+          <img src="figs/demo_framework.png"/>
+          <p>Overview of our DIME.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="body-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-4 hidden-sm"></div>
+            <div class="col-4">
+              <div class="line"></div>
+            </div>
+            <div class="col-4 hidden-sm"></div>
+          </div>
+        <div class="row">
+            <div class="col-1 hidden-sm"></div>
+            <div class="col-10">
+              <h2 class="center m-bottom">Demonstrations</h3>
+            </div>
+            <div class="col-1 hidden-sm"></div>
+          </div>
+      <div class="grid-display">
+        <div class="row">
+          <img src="figs/demonstrations.png"/>
+          <!-- <div class="col-6">
+            <video class="img" controls muted autoplay loop>
+                <source src="files/demo_small.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="col-6">
+            <video class="img" controls muted autoplay loop>
+                <source src="files/demo_pov_small.mp4" type="video/mp4">
+            </video>
+          </div> -->
+        </div>
+        <div class="row">
+            <div class="col-1 hidden-sm"></div>
+            <div class="col-10">
+              <h2 class="center">Execution</h3>
+            </div>
+            <div class="col-1 hidden-sm"></div>
+          </div>
+        <div class="row">
+          <div class="col-4">
+            <img src="figs/flip-2x.gif"/>
+            <h3 class="center">Flipping task (x2)</h3>
+          </div>
+          <div class="col-4">
+            <img src="figs/fidget-8x.gif"/>
+            <h3 class="center">Spinning task (x8)</h3>
+          </div>
+          <div class="col-4">
+            <img src="figs/block-8x.gif"/>
+            <h3 class="center">Rotating task (x8)</h3>
+          </div>
+        </div>
+      <div class="row">
+        <div class="col-4 hidden-sm"></div>
+        <div class="col-4">
+          <div class="line"></div>
+        </div>
+        <div class="col-4 hidden-sm"></div>
+      </div>
+      <div class="row">
+        <div class="col-1 hidden-sm"></div>
+        <div class="col-10">
+          <h2 class="center">Citation</h3>
+          <pre class="code">
+            Coming soon!
+          </pre>
+        </div>
+        <div class="col-1 hidden-sm"></div>
+      </div>
+    </div>
+  </div>
+  <footer>
+  </footer>
+</body>
+</html>
