@@ -111,6 +111,13 @@ p {
 }
 
 .center {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.gif-center {
+  display: block;
   text-align: center;
   margin-left: auto;
   margin-right: auto;

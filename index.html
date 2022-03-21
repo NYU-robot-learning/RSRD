@@ -124,7 +124,7 @@
           </div>
       <div class="grid-display">
         <div class="row">
-          <img src="figs/demo_framework.png"/>
+          <img src="figs/demo_framework.png" class="center"/>
           <!-- <div class="col-6">
             <video class="img" controls muted autoplay loop>
                 <source src="files/demo_small.mp4" type="video/mp4">
@@ -138,6 +138,10 @@
         <p>Unlike previous work, which uses one or multiple depth cameras, we collect demonstrations in real-time from a single RGB camera. 
           We use MediaPipe's hand detector and re-target the human fingertip positions into desired fingertip positions for the AllegroHand.
         The low-level controller uses inverse kinematics and a PD control to reach the desired locations in 3D space.</p>
+        <div class="gif-center">
+          <img src="figs/demonstration-collection.gif"/>
+          <h3 class="center">Demonstration collection for the rotating task (x4)</h3>
+        </div>
         </div>
         <div class="row">
             <div class="col-1 hidden-sm"></div>
@@ -148,15 +152,15 @@
           </div>
         <div class="row">
           <div class="col-4">
-            <img src="figs/flip-2x.gif"/>
+            <img src="figs/flip-2x-optimized.gif"/>
             <h3 class="center">Flipping task (x2)</h3>
           </div>
           <div class="col-4">
-            <img src="figs/fidget-8x.gif"/>
+            <img src="figs/fidget-8x-optimzed.gif"/>
             <h3 class="center">Spinning task (x8)</h3>
           </div>
           <div class="col-4">
-            <img src="figs/block-8x.gif"/>
+            <img src="figs/block-8x-optimized.gif"/>
             <h3 class="center">Rotating task (x8)</h3>
           </div>
           <p>We find a simple nearest neighbors-based immitation approach (INN) is sufficient to solve our tasks. Here we visualize a learned policy for each of the 3 tasks we consider. </p>
